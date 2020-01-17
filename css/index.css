@@ -258,7 +258,13 @@ button {
     background-position-y: 66%;
 }
 
+.contact-page .content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-page form {
+    flex-basis: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +272,7 @@ button {
 
 .form-group {
     width: 400px;
-    margin: 10px 0;
+    margin: 0 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -275,17 +281,14 @@ button {
     max-width: 100px;
 }
 
-.contact-page .bottom-content {
-    margin: 40px 0;
-    justify-content: space-between;
-    height: 200px;
-}
-
-.contact-page .bottom-content div {
+.contact-page .contact {
     flex-basis: 48%;
 }
+    
 
-.contact-page .bottom-content .contact-img {
+.contact-page .contact .contact-img {
+    height: 200px;
+    margin-bottom: 40px;
     background-image: url(../img/about-working.png);
     background-size: cover;
 }
