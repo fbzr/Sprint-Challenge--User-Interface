@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    word-break: break-all;
 }
 
 .container {
@@ -322,4 +324,12 @@ button {
 .product-description {
     align-self: center;
     margin: 0 20px;
+}
+
+/* MOBILE */
+@media only screen and (max-device-width: 800px) {
+    /* About page */
+	.about-card {
+        flex-basis: auto;
+	}
 }
