@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,6 +71,51 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+/* Create class to center items in container */
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+nav {
+    justify-content: space-around;
+    height: 80px;
+}
+
+.nav-logo {
+    background-image: url(../img/lambda-black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-basis: 100%;
+    height: 100%;
+}
+
+.nav-link {
+    flex-basis: 77%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: background-color 300ms;
+}
+
+.nav-link:hover {
+    background-color: #333;
+	color: #fff;
+}
+
+.header-img {
+    height: 153px;
+    width: 100%;
+    background-image: url(../img/jumbo.jpg);
+    margin-bottom: 20px;
+}
+
+/* --------------------------- */
 
 .top-content {
     display: flex;
@@ -112,6 +158,21 @@ p {
     justify-content: center;
 }
 
+/* Change boxes colors */
+
+#box-1 { background: teal; }
+#box-2 { background: gold; }
+#box-3 { background: cadetblue; }
+#box-4 { background: coral; }
+#box-5 { background: crimson; }
+#box-6 { background: forestgreen; }
+#box-7 { background: darkorchid; }
+#box-8 { background: hotpink; }
+#box-9 { background: indigo; }
+#box-10 { background: dodgerblue; }
+
+/* --------------------------- */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +204,131 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About page */
+
+.about-page header .header-img {
+    background-image: url(../img/jumbo-about.png);
+}
+
+.about-page .top-content  {
+    justify-content: left;
+    padding: 0 2% 20px;
+}
+
+.about-page .middle-content {
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-page .middle-content h2 {
+    padding: 20px 0;
+}
+
+.about-card {
+    flex-basis: 48%;
+    border-bottom: 1px dashed black;
+    padding: 20px 0;
+}
+
+button {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid#000;
+    border-radius: 10px;
+    padding: 8px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.about-page .bottom-content {
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Contact page */
+
+.contact-page header .header-img {
+    background-image: url(https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position-y: 66%;
+}
+
+.contact-page .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-page form {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 400px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page button {
+    max-width: 100px;
+}
+
+.contact-page .contact {
+    flex-basis: 48%;
+}
+
+.contact-page .contact .contact-img {
+    height: 200px;
+    margin-bottom: 40px;
+    background-image: url(../img/about-working.png);
+    background-size: cover;
+}
+
+/* Products */
+.products-container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.products-page .top-content {
+    padding-bottom: 20px;
+    justify-content: left;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.product {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 40px;    
+}
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+    object-fit: cover;
+}
+.product-description {
+    align-self: center;
+    margin: 0 20px;
+}
+
+/* MOBILE */
+@media only screen and (max-device-width: 800px) {
+    /* About page */
+	.about-card {
+        flex-basis: auto;
+	}
 }
