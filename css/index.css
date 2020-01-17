@@ -274,3 +274,18 @@ button {
 .contact-page button {
     max-width: 100px;
 }
+
+.contact-page .bottom-content {
+    margin: 40px 0;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.contact-page .bottom-content div {
+    flex-basis: 48%;
+}
+
+.contact-page .bottom-content .contact-img {
+    background-image: url(../img/about-working.png);
+    background-size: cover;
+}
