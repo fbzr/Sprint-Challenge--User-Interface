@@ -237,3 +237,9 @@ button {
     margin-top: 20px;
     font-size: 16px;
 }
+
+.about-page .bottom-content {
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
