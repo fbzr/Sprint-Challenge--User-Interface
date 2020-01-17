@@ -204,3 +204,8 @@ footer nav a {
 .about-page header .header-img {
     background-image: url(../img/jumbo-about.png);
 }
+
+.about-page .top-content  {
+    justify-content: left;
+    padding: 0 2% 20px;
+}
