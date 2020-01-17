@@ -291,3 +291,35 @@ button {
     background-image: url(../img/about-working.png);
     background-size: cover;
 }
+
+/* Products */
+.products-container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.products-page .top-content {
+    padding-bottom: 20px;
+    justify-content: left;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.product {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 40px;    
+}
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+    object-fit: cover;
+}
+.product-description {
+    align-self: center;
+    margin: 0 20px;
+}
