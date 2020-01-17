@@ -209,3 +209,16 @@ footer nav a {
     justify-content: left;
     padding: 0 2% 20px;
 }
+
+.about-page .middle-content {
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    flex-basis: 48%;
+    border-bottom: 1px dashed black;
+    padding: 20px 0;
+}
