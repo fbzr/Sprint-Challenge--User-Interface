@@ -101,6 +101,13 @@ nav {
     font-size: 14px;
 }
 
+.header-img {
+    height: 153px;
+    width: 100%;
+    background-image: url(../img/jumbo.jpg);
+    margin-bottom: 20px;
+}
+
 /* --------------------------- */
 
 .top-content {
