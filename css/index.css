@@ -257,3 +257,20 @@ button {
     background-size: cover;
     background-position-y: 66%;
 }
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 400px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page button {
+    max-width: 100px;
+}
