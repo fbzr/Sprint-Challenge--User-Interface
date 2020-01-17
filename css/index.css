@@ -99,6 +99,12 @@ nav {
     text-decoration: none;
     color: #000;
     font-size: 14px;
+    transition: background-color 300ms;
+}
+
+.nav-link:hover {
+    background-color: #333;
+	color: #fff;
 }
 
 .header-img {
